@@ -1,0 +1,62 @@
+/* Universal Styles */
+* {
+
+}
+
+div {
+  display: block;
+}
+
+.flex-container {
+  display: flex;
+}
+
+/* Header Section */
+
+header {
+  max-width: 1080px;
+  height: 64px;
+  margin: auto;
+}
+
+.header {
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0px 24px;
+  padding-top: 16px;
+  justify-content: space-between;
+}
+
+.header .logo {
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+nav span {
+  align-self: flex-end;
+  margin: 0 8px;
+}
+
+/*Intro Section */
+
+.intro {
+  max-width: 1080px;
+  height: 400px;
+  margin: auto;
+  background-color: lightgray;
+  padding: 32px 24px;
+}
+
+.main-container {
+  display: flex;
+
+}
+
+.main-container .image {
+  margin-right: 24px;
+}
+.main-container img {
+  width: 60%;
+  height: auto;
+}
