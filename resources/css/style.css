@@ -1,6 +1,6 @@
 /* Universal Styles */
 * {
-
+  font-size: 12px;
 }
 
 div {
@@ -9,6 +9,15 @@ div {
 
 .flex-container {
   display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-1 {
+  font-size: 40px;
+  font-weight: bold;
 }
 
 /* Header Section */
@@ -25,6 +34,7 @@ header {
   margin: 0px 24px;
   padding-top: 16px;
   justify-content: space-between;
+  font-size: 1.2rem;
 }
 
 .header .logo {
@@ -42,21 +52,123 @@ nav span {
 
 .intro {
   max-width: 1080px;
-  height: 400px;
+  height: 480px;
   margin: auto;
   background-color: lightgray;
-  padding: 32px 24px;
+  padding: 32px 0px 32px 24px;
 }
 
 .main-container {
   display: flex;
-
+  justify-content: flex-start;
 }
 
 .main-container .image {
   margin-right: 24px;
-}
-.main-container img {
   width: 60%;
   height: auto;
+}
+.main-container img {
+  width: 100%;
+  height: auto;
+}
+
+.main-container .button {
+  background-color: gray;
+  padding: 8px 0px;
+  height: 30px;
+}
+
+.main-container .button p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.main-container .text {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.main-container .text-1 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: inherit;
+}
+
+.main-container .text-2 {
+  font-size: 25px;
+}
+
+.main-container .text-1,
+.main-container .text-2,
+.main-container .button {
+  margin-top: 10%;
+}
+
+/* Info Section */
+
+.info {
+  max-width: 1080px;
+  height: 600px;
+  margin: auto;
+  padding: 32px 0px 32px 24px;
+  background-color: gray;
+}
+
+.info .left-section {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding-right: 24px;
+}
+
+.left-section img {
+  width: 100%;
+}
+
+.left-section .text-2 {
+  font-size: 20px;
+}
+
+.left-section .text-3 {
+  padding-top: 20px;
+}
+
+.left-section .text-1,
+.left-section .text-2,
+.left-section .text-3 {
+  margin-top: 32px;
+}
+
+/* Learning Section */
+
+
+
+
+/* Thesis Section */
+
+
+
+
+
+/* Footer Section */
+
+footer {
+  max-width: 1080px;
+  margin: auto;
+  padding: 16px 0px 16px 24px;
+}
+
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer span {
+  margin-right: 12px;
 }
