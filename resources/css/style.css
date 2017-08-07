@@ -1,6 +1,7 @@
 /* Universal Styles */
 * {
   font-size: 12px;
+  color: gray;
 }
 
 div {
@@ -18,6 +19,7 @@ a {
 .text-1 {
   font-size: 40px;
   font-weight: bold;
+  color: darkgray;
 }
 
 /* Header Section */
@@ -116,7 +118,8 @@ nav span {
   height: 600px;
   margin: auto;
   padding: 32px 0px 32px 24px;
-  background-color: gray;
+  background-color: white;
+  display: flex;
 }
 
 .info .left-section {
@@ -142,6 +145,58 @@ nav span {
 .left-section .text-2,
 .left-section .text-3 {
   margin-top: 32px;
+}
+
+.info .right-section {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.right-section .image {
+  width: 35%;
+  padding-right: 16px;
+}
+
+.right-section .image img {
+  width: 100%;
+  height: auto;
+}
+
+.right-section .orientation,
+               .campus,
+               .guest {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid lightgray;
+}
+
+.right-section .guest {
+  background-color: lightgray;
+}
+
+.right-section .text {
+  width: 65%;
+  line-height: 1.2;
+}
+
+.right-section .text h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: gray;
+}
+
+.right-section .text a {
+  color: blue;
+}
+
+.text h3,
+h4,
+a {
+  margin: 8px 0px;
 }
 
 /* Learning Section */
