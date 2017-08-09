@@ -202,7 +202,6 @@ a {
 /* Learning Section */
 
 .learning {
-  display: block;
   max-width: 1080px;
   height: auto;
   margin: auto;
@@ -260,14 +259,24 @@ a {
   color: gray;
 }
 
+.flex-container .text p {
+  line-height: 1.3;
+  font-size: 16px;
+}
 .flex-container .text .courses {
-  margin: 8px 0px;
+  padding: 8px 0px;
   font-weight: normal;
 }
 
 /* Thesis Section */
 
-
+.thesis {
+  max-width: 1080px;
+  height: 600px;            /* Reference Lines. Remove after finishing. */
+  background-color: blue;  /* Reference Lines. Remove after finishing. */
+  margin: auto;
+  padding-left: 24px;
+}
 
 
 
