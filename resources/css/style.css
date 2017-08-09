@@ -54,7 +54,7 @@ nav span {
 
 .intro {
   max-width: 1080px;
-  height: 480px;
+  height: auto;
   margin: auto;
   background-color: lightgray;
   padding: 32px 0px 32px 24px;
@@ -115,7 +115,7 @@ nav span {
 
 .info {
   max-width: 1080px;
-  height: 600px;
+  height: auto;
   margin: auto;
   padding: 32px 0px 32px 24px;
   background-color: white;
@@ -201,8 +201,69 @@ a {
 
 /* Learning Section */
 
+.learning {
+  display: block;
+  max-width: 1080px;
+  height: auto;
+  margin: auto;
+  background-color: lightgray;
+  padding-left: 24px;
+}
 
+.learning .learning-container {
+  padding: 32px 72px 32px 48px;
+  margin-bottom: 32px;
+  height: auto;
+  text-align: center;
+}
 
+.learning-container h2 {
+  color: black;
+  margin-bottom: 32px;
+}
+
+.learning-container .flex-container {
+  flex-direction: row;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.flex-container .software,
+                .computer-art,
+                .design,
+                .data,
+                .business,
+                .marketing {
+  margin-right: 16px;
+  margin-bottom: 16px;
+  display: inline-block;
+  flex-grow: 1;
+  width: 30%;
+  height: auto;
+  background-color: white;
+}
+
+.flex-container .image img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 16px;
+}
+
+.flex-container .text {
+  padding: 0px 16px 24px 16px;
+  text-align: left;
+}
+
+.flex-container .text h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: gray;
+}
+
+.flex-container .text .courses {
+  margin: 8px 0px;
+  font-weight: normal;
+}
 
 /* Thesis Section */
 
