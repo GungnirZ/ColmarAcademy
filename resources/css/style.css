@@ -22,6 +22,10 @@ a {
   color: darkgray;
 }
 
+.mobile {
+  display: none;
+}
+
 /* Header Section */
 
 header {
@@ -37,6 +41,15 @@ header {
   padding-top: 16px;
   justify-content: space-between;
   font-size: 1.2rem;
+}
+
+.desktop {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header .logo {
@@ -57,6 +70,24 @@ header {
 nav span {
   align-self: flex-end;
   margin: 0 8px;
+}
+
+@media only screen and (max-width: 675px) {
+  .header .logo span {
+    display: none;
+  }
+
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    width: 480px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 /*Intro Section */
@@ -118,6 +149,39 @@ nav span {
 .main-container .text-2,
 .main-container .button {
   margin-top: 10%;
+}
+
+@media only screen and (max-width: 675px) {
+  .intro {
+    padding: 0px;
+  }
+
+  .intro .mobile {
+    flex-direction: column;
+  }
+
+  .main-container .image {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .main-container .text {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .main-container .text-1 {
+    margin: 32px 16px;
+  }
+
+  .main-container .text-2 {
+    margin: 0px 16px;
+  }
+
+  .main-container .button {
+    max-width: 100%;
+    margin: 24px 16px 32px 16px;
+  }
 }
 
 /* Info Section */
